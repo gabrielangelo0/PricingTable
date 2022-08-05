@@ -7,23 +7,24 @@ export const CardContainer = styled.div`
             color: black;
 
             border-radius: 8px;
-            padding: 1.875rem;
             box-shadow: 1px 1px 5px rgba(0,0,0, 0.1);
             display: flex;
             flex-direction: column;
 
-            justify-content: space-between;
+            .masterContent {
+                padding: 0 1.875rem;
 
-
-            header {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 p {
                 font-size: 0.875rem;
                 color: var(--gray);
-
+    
                 }
                 h2 {
                 font-size: 2.375rem;
-
+    
                 > span {
                     font-size: 1.125rem;
                     font-weight: 400;
@@ -32,6 +33,8 @@ export const CardContainer = styled.div`
                     color: var(--gray);
                 }
                 }
+            }
+            header {
                 h6 {
                     font-size: 1.125rem;
                 }
@@ -49,12 +52,20 @@ export const CardContainer = styled.div`
             }
         }
         .basic {
+            border-radius: 8px;
+            overflow: hidden;
             .top {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                color: var(--blue);
+                background: var(--yellow);
+                .paddingTop {
+                    padding: 1.875rem;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    color: var(--blue);
+                    
+                }
 
                 button {
                     background: var(--blue);
@@ -68,7 +79,7 @@ export const CardContainer = styled.div`
     
 
     footer {
-        margin-top: 1rem;
+        margin: 1rem 0 1.875rem 0;
         display: flex;
         
         button {

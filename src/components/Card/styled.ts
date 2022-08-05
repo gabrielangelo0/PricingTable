@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
+        display: grid;
+        align-items: flex-start;
         .card {
             margin-top: 4rem;
             background: white;
@@ -10,16 +12,16 @@ export const CardContainer = styled.div`
             box-shadow: 1px 1px 5px rgba(0,0,0, 0.1);
             display: flex;
             flex-direction: column;
+            align-items: stretch;
 
+            
             .masterContent {
                 padding: 0 1.875rem;
 
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
                 p {
                 font-size: 0.875rem;
                 color: var(--gray);
+                margin-bottom: 1.25rem;
     
                 }
                 h2 {
@@ -33,7 +35,9 @@ export const CardContainer = styled.div`
                     color: var(--gray);
                 }
                 }
+
             }
+            
             header {
                 h6 {
                     font-size: 1.125rem;

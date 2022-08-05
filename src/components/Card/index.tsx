@@ -19,21 +19,21 @@ export function Card ({name, price, content}: CardProps) {
                                 <h2>R$ {price}<span>,00</span><span> /mês</span></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 <hr />
-                            <main>
-                                {content?.map(list => {
-                                    return (
-                                        <ul>
-                                            <li><img src={ check } alt="check" /></li>
-                                            <li>{list.content}</li>
-                                        </ul>
-                                    )
-                                })}
-                            </main>
-                        <footer>
-                            <button>ASSINAR</button>
-                        </footer>
+                                <main>
+                                    {content?.map(list => {
+                                        return (
+                                            <ul>
+                                                <li><img src={ check } alt="check" /></li>
+                                                <li>{list.content}</li>
+                                            </ul>
+                                        )
+                                    })}
+                                </main>
+                                <footer>
+                                    <button>ASSINAR</button>
+                                </footer>
+                            </div>
                     </div>
-                        </div>
         </CardContainer>
     )
 }

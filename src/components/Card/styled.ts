@@ -35,7 +35,6 @@ export const CardContainer = styled.div`
                     color: var(--gray);
                 }
                 }
-
             }
             
             header {
@@ -79,6 +78,57 @@ export const CardContainer = styled.div`
                     border-radius: 40px;
                 }
             }
+            footer {
+                button {
+                    background: var(--blue);
+                    color: white;
+                    transition: 200ms all ease;
+
+                    &:hover {
+                        background: transparent;
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
+        .other {
+            border-radius: 8px;
+            overflow: hidden;
+            .top {
+                background: transparent;
+                .paddingTop {
+                    padding: 1.875rem;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    color: var(--blue);
+                    
+                }
+
+                button {
+                    opacity: 0;
+                    background: var(--blue);
+                    color: white;
+
+                    padding: 0.5rem 1.5rem;
+                    border-radius: 40px;
+
+                }
+            }
+            footer {
+                button {
+                    background: transparent;
+                    color: var(--blue);
+                    transition: 200ms all ease;
+
+                    &:hover {
+                        background: var(--blue);
+                        color: white;
+                    }
+                }
+        }
         }
     
 

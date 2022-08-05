@@ -7,6 +7,7 @@ export function Home () {
             id: 1,
             name:"Free",
             price:"0",
+            basic: false,
             content: [
                 {type: "list", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
                 {type: "list", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
@@ -17,6 +18,7 @@ export function Home () {
             id: 2,
             name:"Basic",
             price:"29",
+            basic: true,
             content: [
                 {type: "list", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
                 {type: "list", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
@@ -28,6 +30,7 @@ export function Home () {
             id: 3,
             name:"Profesional",
             price:"59",
+            basic: false,
             content: [
                 {type: "list", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
                 {type: "list", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
@@ -54,6 +57,7 @@ export function Home () {
                                 name={ item.name }
                                 price={ item.price }
                                 content= { item.content }
+                                basic={ item.basic }
                             />
                         )
                     })}

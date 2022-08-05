@@ -2,11 +2,11 @@ import { CardContainer } from "./styled";
 import check from '../../assets/check.svg'
 import { CardProps } from "../../context/ICardProps";
 
-export function Card ({name, price, content}: CardProps) {
+export function Card ({name, price, basic, content}: CardProps) {
 
     return (
         <CardContainer>
-        <div className="card basic">
+        <div className={basic ? "basic card" : "other card"}>
                             <header>
                                 <div className="top">
                                     <div className="paddingTop">

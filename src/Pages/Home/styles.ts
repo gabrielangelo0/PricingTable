@@ -36,6 +36,10 @@ export const BackgroundHeader = styled.div`
     color: white;
     height: 50vh;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        height: 70vh;
+    }
 `;
 
 export const Content = styled.div`

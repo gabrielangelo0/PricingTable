@@ -1,5 +1,6 @@
 import { BackgroundHeader, Content, HomeContainer } from "./styles";
 import { Card } from "../../components/Card";
+import { Typewriter, useTypewriter } from 'react-simple-typewriter'
 
 export function Home () {
     const items = [
@@ -40,13 +41,19 @@ export function Home () {
             ]
         },
     ]
+    const {text} = useTypewriter({
+        words: ['Conheça nossos planos'],
+        loop: true,
+        delaySpeed: 5000,
+        deleteSpeed: 70,
+      })
 
     return (
         <HomeContainer>
             <BackgroundHeader>
                 <Content>
                 <header>
-                    <h1>Conheça nossos planos</h1>
+                    <h1>{text}</h1>
                     <p>Conheça nossas soluções e escolha o plano ideal para o seu próximo projeto.</p>
                 </header>
                 <section>

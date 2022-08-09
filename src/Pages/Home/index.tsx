@@ -1,6 +1,6 @@
 import { BackgroundHeader, Content, HomeContainer } from "./styles";
 import { Card } from "../../components/Card";
-import { Typewriter, useTypewriter } from 'react-simple-typewriter'
+import { useTypewriter } from 'react-simple-typewriter'
 
 export function Home () {
     const items = [

@@ -6,10 +6,10 @@ export const HomeContainer = styled.div`
     header {
         display: flex;
         flex-direction: column;
-        gap: 1.125rem;
         h1 {
             margin-top: 6.25rem;
             font-size: 3rem;
+            min-height: 5rem;
         }
         p {
             font-size: 1.125rem;
@@ -47,5 +47,11 @@ export const Content = styled.div`
     flex-direction: column;
 
     padding: 0rem 1rem;
+
+    header {
+        h1 {
+            min-height: 10rem;
+        }
+    }
     
 `;
